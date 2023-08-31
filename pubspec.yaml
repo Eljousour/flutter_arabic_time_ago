@@ -29,4 +29,9 @@ flutter:
   uses-material-design: true
 
 platforms:
-  - all
+  - android
+  - ios
+  - web
+  - macOS
+  - windows
+  - linux
