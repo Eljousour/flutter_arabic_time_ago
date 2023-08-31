@@ -1,8 +1,8 @@
-import 'package:arabic_time_ago_flutter/arabic_time_ago.dart';
+import 'package:flutter_arabic_time_ago/arabic_time_ago.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text('TimeAgo Example')),
+        appBar: AppBar(title: const Text('TimeAgo Example')),
         body: Center(
           child: Text(
               ArabicTimeAgo.getTimeAgo(DateTime.now().microsecondsSinceEpoch)),
