@@ -1,57 +1,57 @@
 class ArabicTimeAgo {
   static String getTimeAgo(int millisecondsCreationTimestamp) {
-    const int SECOND_MILLIS = 1000;
-    const int MINUTE_MILLIS = 60 * SECOND_MILLIS;
-    const int HOUR_MILLIS = 60 * MINUTE_MILLIS;
-    const int DAY_MILLIS = 24 * HOUR_MILLIS;
-    const int WEEK_MILLIS = 7 * DAY_MILLIS;
-    const int MONTH_MILLIS = 30 * DAY_MILLIS;
-    const int YEAR_MILLIS = 12 * MONTH_MILLIS;
+    const int secondMillis = 1000;
+    const int minuteMillis = 60 * secondMillis;
+    const int hourMillis = 60 * minuteMillis;
+    const int dayMillis = 24 * hourMillis;
+    const int weekMillis = 7 * dayMillis;
+    const int monthMillis = 30 * dayMillis;
+    const int yearMillis = 12 * monthMillis;
 
     DateTime now = DateTime.now();
     final int diff = now.millisecondsSinceEpoch - millisecondsCreationTimestamp;
 
-    if (diff < SECOND_MILLIS) {
+    if (diff < secondMillis) {
       return "قبل لحظات";
-    } else if (diff < 2 * MINUTE_MILLIS) {
+    } else if (diff < 2 * minuteMillis) {
       return "قبل دقيقة";
-    } else if (diff < 59 * MINUTE_MILLIS) {
-      return "قبل  ${diff ~/ MINUTE_MILLIS}  د";
-    } else if (diff < 90 * MINUTE_MILLIS) {
+    } else if (diff < 59 * minuteMillis) {
+      return "قبل  ${diff ~/ minuteMillis}  د";
+    } else if (diff < 90 * minuteMillis) {
       return "قبل ساعة";
-    } else if (diff < 3 * HOUR_MILLIS) {
+    } else if (diff < 3 * hourMillis) {
       return "قبل ساعتان";
-    } else if (diff < 11 * HOUR_MILLIS) {
-      return "قبل  ${diff ~/ HOUR_MILLIS} ساعات";
-    } else if (diff < 24 * HOUR_MILLIS) {
-      return "قبل  ${diff ~/ HOUR_MILLIS} ساعة";
-    } else if (diff < 48 * HOUR_MILLIS) {
+    } else if (diff < 11 * hourMillis) {
+      return "قبل  ${diff ~/ hourMillis} ساعات";
+    } else if (diff < 24 * hourMillis) {
+      return "قبل  ${diff ~/ hourMillis} ساعة";
+    } else if (diff < 48 * hourMillis) {
       //return context.getString(R.string.yesterday) + "  " + getHour(String.valueOf(date));
       return "يوم أمس ";
-    } else if (diff < 3 * DAY_MILLIS) {
+    } else if (diff < 3 * dayMillis) {
       return "قبل يومين";
-    } else if (diff < 6 * DAY_MILLIS) {
-      return "قبل  ${diff ~/ DAY_MILLIS}  أيام";
-    } else if (diff < 11 * DAY_MILLIS) {
+    } else if (diff < 6 * dayMillis) {
+      return "قبل  ${diff ~/ dayMillis}  أيام";
+    } else if (diff < 11 * dayMillis) {
       return "قبل أسبوع";
-    } else if (diff < 3 * WEEK_MILLIS) {
+    } else if (diff < 3 * weekMillis) {
       return "قبل أسبوعين";
-    } else if (diff < 4 * WEEK_MILLIS) {
-      return "قبل ${diff ~/ WEEK_MILLIS} أسابيع";
-    } else if (diff < 2 * MONTH_MILLIS) {
+    } else if (diff < 4 * weekMillis) {
+      return "قبل ${diff ~/ weekMillis} أسابيع";
+    } else if (diff < 2 * monthMillis) {
       return "قبل شهر";
-    } else if (diff < 3 * MONTH_MILLIS) {
+    } else if (diff < 3 * monthMillis) {
       return "قبل شهرين";
-    } else if (diff < 10 * MONTH_MILLIS) {
-      return "قبل ${diff ~/ MONTH_MILLIS} اشهر";
-    } else if (diff < 12 * MONTH_MILLIS) {
-      return "قبل ${diff ~/ MONTH_MILLIS} شهرا";
-    } else if (diff < 24 * MONTH_MILLIS) {
+    } else if (diff < 10 * monthMillis) {
+      return "قبل ${diff ~/ monthMillis} اشهر";
+    } else if (diff < 12 * monthMillis) {
+      return "قبل ${diff ~/ monthMillis} شهرا";
+    } else if (diff < 24 * monthMillis) {
       return "قبل سنة";
-    } else if (diff < 3 * YEAR_MILLIS) {
+    } else if (diff < 3 * yearMillis) {
       return "قبل سنتان";
     } else {
-      return "قبل ${diff ~/ YEAR_MILLIS} سنوات";
+      return "قبل ${diff ~/ yearMillis} سنوات";
     }
   }
 }
