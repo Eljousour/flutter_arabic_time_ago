@@ -28,4 +28,5 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
-platforms: all
+platforms:
+  - all
