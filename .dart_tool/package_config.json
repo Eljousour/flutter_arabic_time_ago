@@ -32,12 +32,6 @@
       "languageVersion": "2.18"
     },
     {
-      "name": "cupertino_icons",
-      "rootUri": "file:///Users/mac/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.6",
-      "packageUri": "lib/",
-      "languageVersion": "2.19"
-    },
-    {
       "name": "fake_async",
       "rootUri": "file:///Users/mac/.pub-cache/hosted/pub.dev/fake_async-1.3.1",
       "packageUri": "lib/",
@@ -152,7 +146,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-08-31T23:19:56.152467Z",
+  "generated": "2023-08-31T23:31:48.350977Z",
   "generator": "pub",
   "generatorVersion": "3.0.6"
 }
