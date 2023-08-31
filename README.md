@@ -14,11 +14,12 @@ Arabic Time Ago Flutter is a package that provides a simple and convenient way t
 
 To use this package, add `arabic_time_ago_flutter` as a dependency in your `pubspec.yaml` file.
 
-````yaml
+```yaml
 dependencies:
   flutter:
     sdk: flutter
   arabic_time_ago_flutter: ^1.0.0
+```
 
 ## Usage
 
@@ -26,7 +27,7 @@ Import the package:
 
 ```dart
 import 'package:flutter_arabic_time_ago/arabic_time_ago.dart';
-````
+```
 
 Use the provided methods to format time intervals:
 
