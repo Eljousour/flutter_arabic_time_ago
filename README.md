@@ -1,6 +1,6 @@
 # Flutter Arabic Time Ago
 
-[![pub package](https://img.shields.io/pub/v/arabic_time_ago_flutter.svg)](https://pub.dev/packages/arabic_time_ago_flutter)
+[![pub package](https://img.shields.io/pub/v/arabic_time_ago_flutter.svg)](https://pub.dev/packages/flutter_arabic_time_ago)
 
 Arabic Time Ago Flutter is a package that provides a simple and convenient way to display time intervals in Arabic, indicating how much time has passed since a given moment. It's particularly useful for Flutter applications targeting Arabic-speaking audiences.
 
