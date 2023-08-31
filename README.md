@@ -14,10 +14,36 @@ Arabic Time Ago Flutter is a package that provides a simple and convenient way t
 
 To use this package, add `arabic_time_ago_flutter` as a dependency in your `pubspec.yaml` file.
 
+````yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  arabic_time_ago_flutter: ^1.0.0
+
 ## Usage
 
 Import the package:
 
 ```dart
 import 'package:flutter_arabic_time_ago/arabic_time_ago.dart';
+````
+
+Use the provided methods to format time intervals:
+
+```dart
+int timestamp = DateTime.now().microsecondsSinceEpoch;
+String timeAgo = ArabicTimeAgo.getTimeAgo(timestamp);
+print('Time ago: $timeAgo');
 ```
+
+For more examples and customization options, check the documentation.
+
+## Changelog
+
+See the Changelog for details about each release.
+
+## License
+
+This package is open-source and available under the [MIT License](https://github.com/Eljousour/flutter_arabic_time_ago/blob/main/LICENSE.txt).
+
+Found a bug or want to contribute? Feel free to [create an issue](https://github.com/Eljousour/flutter_arabic_time_ago/issues/new) or submit a pull request!
