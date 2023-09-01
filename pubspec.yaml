@@ -1,11 +1,12 @@
 name: flutter_arabic_time_ago
 description: A Flutter package to calculate "time ago" from timestamp and show it with native arabic language
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/eljousour/flutter_arabic_time_ago
 repository: https://github.com/eljousour/flutter_arabic_time_ago
 
 environment:
   sdk: ">=3.0.6 <4.0.0"
+  flutter: ">=1.10.0"
 
 dependencies:
   flutter:
@@ -23,15 +24,15 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 flutter:
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
-  uses-material-design: true
-
-platforms:
-  - android
-  - ios
-  - web
-  - macOS
-  - windows
-  - linux
+  plugin:
+    platforms:
+      android:
+        pluginClass: ArabicTimeAgo
+        package: com.eljousour.flutter_arabic_time_ago
+      web:
+        pluginName: ArabicTimeAgo
+        fileName: arabic_time_ago.dart
+      ios:
+        pluginClass: ArabicTimeAgo
+      macos:
+        pluginClass: ArabicTimeAgo

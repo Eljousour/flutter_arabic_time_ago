@@ -1,6 +1,6 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.eljousour.flutter_arabic_time_ago">
     <application
-        android:label="my_packages"
+        android:label="flutter_arabic_time_ago"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
