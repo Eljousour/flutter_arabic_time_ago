@@ -18,7 +18,7 @@ To use this package, add `arabic_time_ago_flutter` as a dependency in your `pubs
 dependencies:
   flutter:
     sdk: flutter
-  arabic_time_ago_flutter: ^1.0.0
+  arabic_time_ago_flutter: ^1.0.1
 ```
 
 ## Usage
